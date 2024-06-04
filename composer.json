@@ -1,0 +1,21 @@
+{
+    "name": "netflie/kata-ddd-fotoverso",
+    "description": "Kata DDD para Principiantes. Creación de una red social en usando Arquitectura limpia y DDD.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alejandro Albarca",
+            "email": "alex@albarca.es"
+        }
+    ],
+    "require": {
+        "ramsey/uuid": "^4.7"
+    },
+    "autoload": {
+    "psr-4": {
+      "Netflie\\Kata\\Apps\\Fotoverso\\": "apps/fotoverso.com",
+      "Netflie\\Kata\\": "src"
+    }
+  }
+}
