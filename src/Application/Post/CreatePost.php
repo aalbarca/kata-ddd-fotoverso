@@ -10,7 +10,7 @@ final class CreatePost
       private DomainEventPublisher $eventPublisher
     ){}
 
-    public function execute(string $userId, string $title, string $content, string $picture_url): void
+    public function __invoke(string $userId, string $title, string $content, string $picture_url): void
     {
         $member = $this->memberRepository->get(new MemberId($userId));
 

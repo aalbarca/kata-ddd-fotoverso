@@ -9,7 +9,7 @@ final class AddComment
       private DomainEventPublisher $eventPublisher
     ){}
 
-    public function execute(string $postId, string $userId, string $content): void
+    public function __invoke(string $postId, string $userId, string $content): void
     {
         $post = $this->postRepository->get(new PostId($postId));
 
